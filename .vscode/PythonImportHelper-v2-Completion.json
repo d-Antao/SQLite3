@@ -1,0 +1,73 @@
+[
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_DIR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "ROOT_DIR = Path(__file__).parent\nDB_NAME = 'db.sqlite3'\nDB_FILE = ROOT_DIR / DB_NAME\nTABLE_NAME = 'Customers'\nconnection = sqlite3.connect(DB_FILE)\ncursor = connection.cursor()\ncursor.execute(\n    f'CREATE TABLE IF NOT EXISTS {TABLE_NAME}'\n    '('\n    'id INTEGER PRIMARY KEY AUTOINCREMENT,'",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "DB_NAME",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "DB_NAME = 'db.sqlite3'\nDB_FILE = ROOT_DIR / DB_NAME\nTABLE_NAME = 'Customers'\nconnection = sqlite3.connect(DB_FILE)\ncursor = connection.cursor()\ncursor.execute(\n    f'CREATE TABLE IF NOT EXISTS {TABLE_NAME}'\n    '('\n    'id INTEGER PRIMARY KEY AUTOINCREMENT,'\n    'name TEXT,'",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "DB_FILE",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "DB_FILE = ROOT_DIR / DB_NAME\nTABLE_NAME = 'Customers'\nconnection = sqlite3.connect(DB_FILE)\ncursor = connection.cursor()\ncursor.execute(\n    f'CREATE TABLE IF NOT EXISTS {TABLE_NAME}'\n    '('\n    'id INTEGER PRIMARY KEY AUTOINCREMENT,'\n    'name TEXT,'\n    'weight REAL'",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "TABLE_NAME",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "TABLE_NAME = 'Customers'\nconnection = sqlite3.connect(DB_FILE)\ncursor = connection.cursor()\ncursor.execute(\n    f'CREATE TABLE IF NOT EXISTS {TABLE_NAME}'\n    '('\n    'id INTEGER PRIMARY KEY AUTOINCREMENT,'\n    'name TEXT,'\n    'weight REAL'\n    ')'",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "connection = sqlite3.connect(DB_FILE)\ncursor = connection.cursor()\ncursor.execute(\n    f'CREATE TABLE IF NOT EXISTS {TABLE_NAME}'\n    '('\n    'id INTEGER PRIMARY KEY AUTOINCREMENT,'\n    'name TEXT,'\n    'weight REAL'\n    ')'\n)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "cursor = connection.cursor()\ncursor.execute(\n    f'CREATE TABLE IF NOT EXISTS {TABLE_NAME}'\n    '('\n    'id INTEGER PRIMARY KEY AUTOINCREMENT,'\n    'name TEXT,'\n    'weight REAL'\n    ')'\n)\nconnection.commit()",
+        "detail": "main",
+        "documentation": {}
+    }
+]
